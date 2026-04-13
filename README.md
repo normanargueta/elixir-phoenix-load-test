@@ -71,7 +71,7 @@ mix load_test 50000
 
 ### k6 script
 
-The k6 script is at [`load_test.js`](./load_test.js) and can be customized to adjust stages, thresholds, or endpoints.
+The k6 script is at [`priv/k6/load_test.js`](./priv/k6/load_test.js) and can be customized to adjust stages, thresholds, or endpoints.
 
 ## Project Structure
 
@@ -85,7 +85,9 @@ lib/
       user_controller.ex      # API endpoints
   mix/tasks/
     load_test.ex              # Mix load test task
-load_test.js                  # k6 test script
+priv/
+  k6/
+    load_test.js              # k6 test script
 ```
 
 ## License

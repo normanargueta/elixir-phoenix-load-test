@@ -70,7 +70,7 @@ defmodule Mix.Tasks.LoadTest do
       "-v", "#{File.cwd!()}:/scripts",
       "-e", "BASE_URL=#{base_url}"
     ] ++ extra_args ++ [
-      "grafana/k6", "run", "/scripts/load_test.js"
+      "grafana/k6", "run", "/scripts/priv/k6/load_test.js"
     ], into: IO.stream(:stdio, :line), stderr_to_stdout: true)
   end
 
